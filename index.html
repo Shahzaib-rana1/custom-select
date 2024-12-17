@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Select Element</title>
+    <link rel="stylesheet" href="select.css">
+</head>
+<body>
+    <form id="customForm">
+        <div class="custom-select-container">
+            <!-- Custom Select 1 -->
+            <div class="custom-select">
+                <div class="select-box" data-placeholder="Select Option 1">Select Option 1</div>
+                <ul class="select-options">
+                    <li data-value="option1">Option 1</li>
+                    <li data-value="option2">Option 2</li>
+                    <li data-value="option3">Option 3</li>
+                </ul>
+                <input type="hidden" name="select1" value="">
+            </div>
+
+            <!-- Custom Select 2 -->
+            <div class="custom-select">
+                <div class="select-box" data-placeholder="Select Option 2">Select Option 2</div>
+                <ul class="select-options">
+                    <li data-value="value1">Value 1</li>
+                    <li data-value="value2">Value 2</li>
+                    <li data-value="value3">Value 3</li>
+                </ul>
+                <input type="hidden" name="select2" value="">
+            </div>
+
+            <!-- Custom Select 3 -->
+            <div class="custom-select">
+                <div class="select-box" data-placeholder="Select Option 3">Select Option 3</div>
+                <ul class="select-options">
+                    <li data-value="item1">Item 1</li>
+                    <li data-value="item2">Item 2</li>
+                    <li data-value="item3">Item 3</li>
+                </ul>
+                <input type="hidden" name="select3" value="">
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="select.js"></script>
+</body>
+</html>
